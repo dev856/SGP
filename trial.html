@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Login/Signup page</title>
+</head>
+<body>
+	<div class="login-box">
+	<img src="images 1.png" class="avatar">
+    <h1>Login to your account</h1>
+    <form name="reform" action="www.geeksforgeeks.org" onsubmit="return EXAMPLE()" method="post"> 
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+            <a href="#">Forget Password</a>    
+    </form>
+  </div>
+  <script>
+    function EXAMPLE() { 
+    var name = document.forms["reform"]["name"];  
+    var password = document.forms["reform"]["password"];
+
+    if (name.value == "") { 
+      alert("Please enter your name."); 
+      name.focus(); 
+      return false; 
+    } 
+    if (password.value == "") { 
+      alert("Please enter your password"); 
+      password.focus(); 
+      return false; 
+    }
+    return true;
+  }  
+  </script>
+</body>
+</html>
