@@ -1,4 +1,4 @@
-# Store and Inventory Control System
+# Store and Inventory(warehouse) Control System
 The Inventory Management System is a real-time inventory database capable of connecting multiple stores.  This can be used to track the inventory of a single store, or to manage the delivery of stock between several branches of a larger franchise.
 
 However, the system merely records sales and restocking data and provides warning of low stock at any location through email at a specified interval.  The goal is to reduce the stress of tracking rather than to holder all store maintenance.
