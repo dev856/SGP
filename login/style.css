@@ -1,0 +1,135 @@
+
+
+body{
+    background-image: url('t1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+ }
+ h1
+ {
+     color: black;
+ }
+ p
+ {
+     color: black;
+ }
+ /* Style tab links */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+ .login-box{
+  width: 420px;
+  height: 470px;
+  background: #ffffff;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+ }
+ .avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: black;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: rgb(170, 212, 170);
+  color: black;
+  
+}
+
+.login-box a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+.login-box a:hover
+{
+  color: darkblue;
+}
+.suggest-password
+{
+    font-family: consolas;
+    padding:12px;
+   display: none;
+    width:362px;
+    height:50px;
+    background-color:rgba(230, 230, 230, 0.9);
+    position: absolute;
+    top:300px;
+}
+#ok{
+    text-align: center;
+}
+h1{
+  text-align: center;
+}
