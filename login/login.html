@@ -14,50 +14,33 @@
             <p id="ok"></p>
         </div>
 	<img src="images 1.png" class="avatar">
-  <button class="tablink" onclick="openPage('Signup', this, 'green')">Signup</button>
-<button class="tablink" onclick="openPage('Login', this, 'white')" id="defaultOpen">Login</button>
+  <button id="s1" class="tablink" onclick="openPage('Signup', this, 'white')">Signup</button>
+<button   class="tablink" onclick="openPage('Login', this, 'white')" id="s2">Login</button>
 <div id="Signup" class="tabcontent">
-<form name="reform1" action="www.geeksforgeeks.org" onsubmit="return EXAMPLE()" method="Get">
+<form name="reform1" action="www.geeksforgeeks.org" onsubmit="return EXAMPLE1()" method="Get">
   <p>E-mail</p>
-  <input type="text" name="E-mail" placeholder="Enter E-mail" required>
+  <input type="text" id="c3" name="E-mail" placeholder="Enter E-mail" required>
   <p>Password</p>
-  <input class="pass" type="password" name="password" placeholder="Enter Password" required>
+  <input class="pass" id="c1" type="password" name="password" placeholder="Enter Password" required>
   <p>Confirm Password</p>
-  <input class="pass" type="password" name="password" placeholder="Enter Password" required>
-  <input type="submit" name="submit" value="Login" >
-  <a href="#">Forget Password ?</a>    
+  <input class="pass" id="c2" type="password" name="password" placeholder="Enter Password" required>
+  <input type="submit"  name="submit" value="Login" >
+  
 </form>  
 </div>
 <div id="Login" class="tabcontent">
-  <form name="reform" action="www.geeksforgeeks.org" onsubmit="return EXAMPLE()" method="post"> 
+  <form name="reform" action="www.geeksforgeeks.org" onsubmit="return EXAMPLE()" method="Get"> 
             <p>Username</p>
             <input type="text" name="username" placeholder="Enter Username" required>
             <p>Password</p>
             <input class="pass" type="password" name="password" placeholder="Enter Password" required>
-            <input type="submit" name="submit" value="Login" >
+            <input type="submit"  name="submit" value="Login" >
             <a href="#">Forget Password ?</a>    
     </form>
 </div>
   <script src="js.js">
   </script>
-  <script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+  
 
 </body>
 </html>
