@@ -3,23 +3,50 @@ const name = document.forms["reform"]["name"];
 const password = document.forms["reform"]["password"];
 let suggest=document.getElementsByClassName("suggest-password")[0];
 let pass=document.getElementsByClassName("pass")[0];
+let pass1=document.getElementsByClassName("pass")[1];
 function EXAMPLE() { 
-   
+  
 
     if (name.value == "") { 
-      alert("Please enter your name."); 
+    
       name.focus(); 
       return false; 
     } 
-    if (password.value == "") { 
-      alert("Please enter your password"); 
+    else if (password.value == "") { 
+      
       password.focus(); 
       return false; 
     }
     return true;
   }  
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+  function EXAMPLE1() { 
+  
+
+    let oldpass=document.getElementById("c1");
+    let newpass=document.getElementById("c2");
+    let email=document.getElementById("c3").value;
+
+    if(oldpass.value==newpass.value && validateEmail(email))
+    {
+        return true;
+    }
+    else{
+        if(oldpass.value!=newpass.value)
+        alert("Password should be same");
+        else
+        {
+            alert("Email format is wrong");
+        }
+        return false;
+    }
+    
+  }  
   pass.onclick=()=>{
-    console.log(8);
+  
  if(password.value=="")
  {
    let string=randompassword();
@@ -92,5 +119,27 @@ function EXAMPLE() {
   let a=document.getElementById("ok").innerHTML;
   
   pass.value=a;
+  pass1.value=a;
   suggest.style.display="none";
   };
+
+  function openPage(pageName,elmnt,color) {
+      if(pageName=="Login")
+      {
+        suggest.style.display="none";
+      }
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("s2").click();
