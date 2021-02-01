@@ -1,7 +1,7 @@
 
 *{
   box-sizing: border-box;
-  margin:0px;
+  margin:0;
   padding:0;
 }
 body{
@@ -137,23 +137,15 @@ color: darkblue;
 h1{
 text-align: center;
 }
-#s1{
+#s1,#s2{
 font-family: consolas;
 height:50px;
 font-size:18px;
 width:100px;
 }
-#s2{
-  font-size:18px;
-  height:50px;
-width:100px;
-font-family: consolas;
-}
 .main-page{
   height:100vh;
   width:100%;
-  
-  background-color: aqua;
 }
 .topnav{
   width:100%;
@@ -181,7 +173,6 @@ font-family: consolas;
 i{
   font-size: 30px;
   color: rgb(255, 255, 255);
-  
 }
 .i1{
   position: absolute;
@@ -190,17 +181,17 @@ i{
 }
 .i2{
   position: absolute;
-  top:10px;
+  top:22px;
   left:25px;
-  font-size: 35px;
+  font-size: 20px;
   
 }
 
 .i4{
   position: absolute;
-  top:20px;
-  left:35px;
-  font-size: 15px;
+  top:25px;
+  left:50px;
+  font-size: 12px;
   
 }
 .i3{
@@ -214,8 +205,6 @@ i{
   width:25%;
   height:607px;
   display: flex;
-  
- 
   flex-flow: column nowrap;
   background-color: rgb(140, 0, 255);
 }
@@ -225,47 +214,29 @@ i{
   padding-left: 80px;
   padding-top: 20px;
   border-width:1px;
-  
   position: relative;
-  
   cursor:pointer;
   background-color: rgb(50, 53, 53);
   overflow: hidden;
 }
 
-.Dashboard:hover{
+.Dashboard:hover,.profile:hover,.add:hover,
+.product:hover,.manage:hover,
+.order:hover,.report:hover,
+.category:hover,.logout:hover{
   background-color: rgb(95, 95, 95);
 }
-.profile:hover{
-  background-color: rgb(95, 95, 95);
-}
-.add:hover{
-  background-color: rgb(95, 95, 95);
-}
-.product:hover{
-  background-color: rgb(95, 95, 95);
-}
-.manage:hover{
-  background-color: rgb(95, 95, 95);
-}
-.order:hover{
-  background-color: rgb(95, 95, 95);
-}
-.report:hover{
-  background-color: rgb(95, 95, 95);
-}
-.category:hover{
-  background-color: rgb(95, 95, 95);
-}
-.logout:hover{
-  background-color: rgb(95, 95, 95);
-}
+
 .sidenav p{
-  color:white;
+  color:rgb(255, 255, 255);
   font-family: consolas;
 }
 .down{
   display: none;
+  
+}
+.sidenav .op1{
+  font-size:1em;
 }
 .main-content{
   width:75%;
@@ -293,4 +264,7 @@ i{
   position: absolute;
   top:15px;
   left:20px;
+}
+.sidenav p{
+  font-size:20px;
 }
