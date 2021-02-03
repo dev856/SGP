@@ -1,0 +1,270 @@
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  background-image: url('t1.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+h1
+{
+   color: black;
+}
+p
+{
+   color: black;
+}
+
+/* Style tab links */
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+background-color: black;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current tablink class */
+
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+}
+
+.login-box{
+width: 420px;
+height: 470px;
+background: #ffffff;
+color: white;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+padding: 70px 30px;
+}
+.avatar{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% - 50px);
+}
+.login-box p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+.login-box input{
+width: 100%;
+margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+border: none;
+border-bottom: 1px solid black;
+background: transparent;
+outline: none;
+height: 40px;
+color: black;
+font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: black;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+cursor: pointer;
+background: rgb(170, 212, 170);
+color: black;
+
+}
+
+.login-box a{
+text-decoration: none;
+font-size: 16px;
+color: black;
+}
+.login-box a:hover
+{
+color: darkblue;
+}
+.suggest-password
+{
+  font-family: consolas;
+  padding:14px;
+ display: none;
+  width:346px;
+  height:50px;
+  background-color:rgba(221, 222, 230, 0.9);
+  position: absolute;
+  top:258px;
+  left:37px;
+}
+#ok{
+  text-align: center;
+  letter-spacing:6px;
+  font-size:20px;
+}
+h1{
+text-align: center;
+}
+#s1,#s2{
+font-family: consolas;
+height:50px;
+font-size:18px;
+width:100px;
+}
+.main-page{
+  height:100vh;
+  width:100%;
+}
+.topnav{
+  width:100%;
+  height:50px;
+  display: flex;
+  position: relative;
+  background-color: beige;
+}
+.left{
+  width:25%;
+  height:50px;
+  background-color: red;
+}
+.left h1{
+  color: #ffffff;
+  line-height: 1.5;;
+  text-align: center;
+}
+.right{
+  width:75%;
+  height:50px;
+  position: relative;
+  background-color: rgb(56, 196, 86);
+}
+i{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.i1{
+  position: absolute;
+  left:20px;
+  top:10px;
+}
+.i2{
+  position: absolute;
+  top:22px;
+  left:25px;
+  font-size: 20px;
+  
+}
+
+.i4{
+  position: absolute;
+  top:25px;
+  left:50px;
+  font-size: 12px;
+  
+}
+.i3{
+  position: absolute;
+  top:0px;
+  left:290px;
+  font-size: 35px;
+  
+}
+.sidenav{
+  width:25%;
+  height:607px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(140, 0, 255);
+}
+.sidenav  div{
+  
+  height:86.7142857143px;
+  padding-left: 80px;
+  padding-top: 20px;
+  border-width:1px;
+  position: relative;
+  cursor:pointer;
+  background-color: rgb(50, 53, 53);
+  overflow: hidden;
+}
+
+.Dashboard:hover,.profile:hover,.add:hover,
+.product:hover,.manage:hover,
+.order:hover,.report:hover,
+.category:hover,.logout:hover{
+  background-color: rgb(95, 95, 95);
+}
+
+.sidenav p{
+  color:rgb(255, 255, 255);
+  font-family: consolas;
+}
+.down{
+  display: none;
+  
+}
+.sidenav .op1{
+  font-size:1em;
+}
+.main-content{
+  width:75%;
+  height:607px;
+  background-color: rgb(255, 255, 255);
+}
+
+.flexi{
+  display: flex;
+}
+.mainco{
+  width:100%;
+  height:560px;
+ 
+}
+.footer{
+  width:100%;
+  position: relative;
+  height:47px;
+  background-color: rgb(98, 100, 100);
+}
+.footer p{
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top:15px;
+  left:20px;
+}
+.sidenav p{
+  font-size:20px;
+}
