@@ -3,7 +3,7 @@
 /*
 npm install express
 npm install body-parser
-
+open in localhost 3000
 */
 const express=require("express");
 const app=express();
