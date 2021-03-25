@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Login/Signup page</title>
+</head>
+<body>
+	<div class="login-box">
+        <div class="suggest-password">
+            
+            <p id="ok"></p>
+        </div>
+	<img src="images.png" class="avatar">
+  <button id="s1" class="tablink" onclick="openPage('Signup', this, 'white')">Signup</button>
+<button   class="tablink" onclick="openPage('Login', this, 'white')" id="s2">Login</button>
+<div id="Signup" class="tabcontent">
+<form name="reform1" action="/auth/dashboard1"   method="POST">
+  <p>E-mail</p>
+  <input type="text" id="c3" name="email" placeholder="Enter E-mail" required>
+  <p>Password</p>
+  <input class="pass" id="c1" type="password" name="password" placeholder="Enter Password" required>
+  <p>Confirm Password</p>
+  <input class="pass" id="c2" type="password" name="passwordconfirm" placeholder="Enter Password" required>
+  <input type="submit"  name="submit" value="SignUp" >
+  
+</form>  
+</div>
+<div id="Login" class="tabcontent">
+  <form name="reform" action="/auth/dashboard1"  method="Post"> 
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input class="pass" type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit"  name="submit" value="Login" >
+            <a href="#">Forget Password ?</a>    
+    </form>
+    {{#if message }}
+   <h4 class="alert alert-danger mt-4">({message)}</h4>
+{{/if}}
+</div>
+
+
+  <script src="js.js">
+  </script>
+  
+
+</body>
+</html>
