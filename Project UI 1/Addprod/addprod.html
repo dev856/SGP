@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="addcss.css">
+       
+    </head>
+    <body>
+     <div class="main-page">
+
+        <div class="topnav">
+            <div class="left">
+                <h1>Admin</h1>
+            </div>
+             <div class="right"><i class="fas fa-warehouse i1"></i></div>
+         </div>
+        <div class="flexi">
+        <div class="sidenav">
+           <div class="Dashboard">
+            <i class="fas fa-tachometer-alt i2"></i>
+            <a href="http://127.0.0.1:5500/Dashboard/dashboard.html" target="_self">Dashboard</a>
+           </div>
+           <div class="profile">
+            <i class="fas fa-users i2"></i><a href="http://127.0.0.1:5500/Dashboard/profile.html" target="_self">Profile</a>
+           </div>
+           <div class="product">	
+            <i class="fas fa-box-open i2"></i>
+            <i class="fas fa-sort-down i3" ></i>
+           
+            <p> Products</p>
+           </div>
+           <div class="add down">
+            <i class="far fa-circle i4"></i>
+            <p class="op1"><a href="http://127.0.0.1:5500/Addprod/addprod.html" target="_self">Add Products</a></p>
+           </div>
+           <div class="manage down">
+            <i class="far fa-circle i4"></i>
+            <p class="op1"><a href="http://127.0.0.1:5500/ManageProd/magprod.html" target="_self">Manage Products</a></p>
+           </div>
+           <div class="order">
+            <i class="fas fa-dollar-sign i2"></i>
+            <i class="fas fa-sort-down i3"></i>
+            <p> Orders</p>
+           </div>
+           <div class="add down">
+            <i class="far fa-circle i4"></i>
+            <p class="op1"><a href="http://127.0.0.1:5500/Addorder/addorder.html" target="_self">Add Orders</a></p>
+           </div>
+           <div class="manage down">
+            <i class="far fa-circle i4"></i>
+            <p class="op1"><a href="http://127.0.0.1:5500/Manorders/manrder.html" target="_self">Manage Orders</a></p>
+           </div>
+           <div class="report">
+            <i class="far fa-chart-bar i2"></i>
+            <p><a href="#" target="_self">Reports</a></p>
+           </div>
+           <div class="category">
+            <i class="fas fa-copy i2"></i>
+            <p> <a href="http://127.0.0.1:5500/pictures/camera.html" target="_self">Products Pictures</a></p>
+           </div>
+           <div class="logout">
+            <i class="fas fa-sign-out-alt i2"></i>
+            <p><a href="http://127.0.0.1:5500/login/login.html" target="_self">Log-Out</a> </p>
+           </div>
+        </div>
+        
+
+<div class="main-content">
+<div class="mainco1">
+ <h1>Add Products</h1>
+ <form id="fp">
+    <label for="fname">Product Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Product name..">
+
+    <label for="lname">Brand Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Brand name..">
+    <label for="lname">Price</label>
+    <input type="text" id="lname" name="lastname" placeholder="INR">
+    <label for="lname">Color/Model</label>
+    <input type="text" id="lname" name="lastname" placeholder="">
+    <label for="lname">Product Description</label><br>
+    <textarea id="subject" name="subject"  >
+    </textarea><br>
+    <label for="country">Category</label>
+    
+    <select id="country" name="country">
+      <option value="australia">Entertainment</option>
+      <option value="canada">Communication</option>
+      <option value="usa">Recreation</option>
+    </select>
+  
+    <input type="submit" value="Add Product">
+ </form>
+</div>
+   
+</div>
+
+     </div>
+        </div>
+        <script src="js1.js" ></script>
+    </body>
+</html>
